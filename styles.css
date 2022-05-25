@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* max-width: 1500px; */
+    margin: 0 auto;
+}
+
+.section-1,
+.section-2 {
+    background-image: url("img/bg-page-1.png");
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.section-1__line-1__round,
+.section-1__line-2__round,
+.section-1__line-3__round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-1__line-1,
+.section-2__line-1 {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.section-1__line-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.section-2__line-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+.round__image {
+    height: 170px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 50%;
+    z-index: 2;
+    /* box-shadow: 0 0 50px #fff; */
+}
+
+.section-1 .round-1__image {
+    background-image: url("img/VOTO0026_Web_16x9_220520.png");
+    border: 3px solid #fff
+}
+
+.section-1 .round-2__image {
+    background-image: url("img/image-2.png");
+
+}
+
+.section-1__line-2 .round-1__image {
+    background-image: url("img/image-3.png");
+}
+
+.section-1__line-2 .round-2__image {
+    background-image: url("img/image-4.png");
+}
+
+.section-1__line-3 .round-1__image {
+    background-image: url("img/image-5.png");
+}
+
+.section-1__sentence {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    bottom: 3%;
+}
+
+.section-wrapper--blue {
+    width: 1000px;
+    height: 600px;
+    background-color: #C2E5F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+.section-2__rounds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-2__backimages__line-1 {
+    position: absolute;
+}
+
+.section-2 .round-1__image,
+.section-2 .round-2__image {
+    background-image: url("img/man+fish.png");
+}
+
+.section-2-star,
+.section-2-X,
+.section-2-crab {
+    z-index: 5;
+    position: absolute;
+}
+
+.section-2-star {
+    left: -10px;
+    top: -40px;
+    width: 120px;
+}
+
+.section-2-X {
+    width: 60px;
+    right: -18px;
+    top: -18px;
+}
+
+.section-2-crab {
+    width: 140px;
+    bottom: 30px;
+    right: 20px;
+}
+
+.section-2__line-3 {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.section-2__line-3 .round-1__image {
+    background-image: url("img/diver.png");
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
