@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "BwMitga-Bold";
+    src: url("fonts/BwMitga-Bold.otf");
+
+    font-family: "LasseÅberg_2020";
+    src: url("fonts/LasseÅberg_2020..otf");
+
+    font-family: "MinionPro-Regular";
+    src: url("fonts/MinionPro-Regular.otf");
+
+    font-family: "Poppins-Bold";
+    src: url("fonts/Poppins-Bold.ttf");
+
+    font-family: "Poppins-Medium";
+    src: url("fonts/Poppins-Medium.ttf");
+
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,35 +24,49 @@
 }
 
 .container {
-    /* max-width: 1500px; */
+    max-width: 1380px;
     margin: 0 auto;
 }
 
-.section-1,
-.section-2 {
+.section {
     background-image: url("img/bg-page-1.png");
-    height: 730px;
+    height: 750px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
     display: flex;
+    align-items: center;
+
+}
+
+.section .container {
+    display: flex;
+    max-height: 600px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1;
 }
 
-.section-1__line-1__round,
-.section-1__line-2__round,
-.section-1__line-3__round,
-.section-2__line-3__round,
-.section-2__line-1__round,
-.section-2__line-2__round {
+.section__round {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+.round__title p {
+    font-family: 'Poppins-Bold';
+    font-size: 35px;
+}
+
+
+
+.round__title path {
+    fill: transparent;
+}
+
+.round__title text {
+    fill: blue;
 }
 
 .section-1__line-1,
@@ -64,7 +97,6 @@
     position: relative;
     border-radius: 50%;
     z-index: 2;
-    /* box-shadow: 0 0 50px #fff; */
 }
 
 .section-1__line-1 .round-1__image {
@@ -89,77 +121,81 @@
     background-image: url("img/image-5.png");
 }
 
+
 .section-1__sentence {
     position: absolute;
     font-size: 18px;
     color: #fff;
     font-weight: 700;
-    bottom: 3%;
+    bottom: -2%;
 }
 
-.section-wrapper--blue {
-    width: 1000px;
-    height: 600px;
+.container--blue {
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
     background-color: #C2E5F4;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     position: relative;
 }
 
-.section-2__rounds {
+.section__rounds {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.section-2__backimages__line-1 {
-    position: absolute;
-}
+
 
 .section-2__line-1 .round-1__image,
+.section-2__line-1 .round-2__image,
+.section-2__line-1 .round-3__image,
+.section-2__line-2 .round-1__image,
 .section-2__line-2 .round-2__image {
     background-image: url("img/man+fish.png");
 }
 
-.section-2-star,
-.section-2-X,
-.section-2-crab {
+
+.top-left-image,
+.top-right-image,
+.bottom-right-image {
     z-index: 5;
     position: absolute;
 }
 
-.section-2-star {
+.top-left-image {
     left: -10px;
     top: -40px;
     width: 120px;
 }
 
-.section-2-X {
+.top-right-image {
     width: 60px;
-    right: -18px;
+    right: -10px;
     top: -18px;
 }
 
-.section-2-crab {
+.bottom-right-image {
     width: 140px;
-    bottom: 30px;
-    right: 20px;
+    bottom: 70px;
+    right: 50px;
 }
 
 .section-2__line-3 {
     position: absolute;
-    bottom: 30px;
-    left: 25px;
+    bottom: 70px;
+    left: 50px;
 }
 
 .section-2__line-3 .round-1__image {
     background-image: url("img/diver.png");
-    width: 150px;
-    height: 150px;
-    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     z-index: 2;
