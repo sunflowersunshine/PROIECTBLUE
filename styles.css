@@ -26,7 +26,10 @@
 
 .section-1__line-1__round,
 .section-1__line-2__round,
-.section-1__line-3__round {
+.section-1__line-3__round,
+.section-2__line-3__round,
+.section-2__line-1__round,
+.section-2__line-2__round {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,12 +67,12 @@
     /* box-shadow: 0 0 50px #fff; */
 }
 
-.section-1 .round-1__image {
+.section-1__line-1 .round-1__image {
     background-image: url("img/VOTO0026_Web_16x9_220520.png");
     border: 3px solid #fff
 }
 
-.section-1 .round-2__image {
+.section-1__line-1 .round-2__image {
     background-image: url("img/image-2.png");
 
 }
@@ -116,8 +119,8 @@
     position: absolute;
 }
 
-.section-2 .round-1__image,
-.section-2 .round-2__image {
+.section-2__line-1 .round-1__image,
+.section-2__line-2 .round-2__image {
     background-image: url("img/man+fish.png");
 }
 
