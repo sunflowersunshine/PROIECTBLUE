@@ -49,6 +49,11 @@
     width: 95%;
 }
 
+.mobile-bottom-right-image,
+.mobile-bottom-left-image {
+    display: none;
+}
+
 .container--darkblue {
     background-color: #0086ca;
     width: 95%;
