@@ -33,9 +33,8 @@
 
 .container {
     max-width: 1380px;
+    width: calc(100% - 30px);
     margin: 0 auto;
-    max-height: 650px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around !important;
@@ -46,7 +45,8 @@
 
 .container--lightblue {
     background-color: #C2E5F4;
-    width: 95%;
+    width: calc(100% - 30px);
+    padding: 30px 0px;
 }
 
 .mobile-bottom-right-image,
@@ -56,18 +56,20 @@
 
 .container--darkblue {
     background-color: #0086ca;
-    width: 95%;
+    width: calc(100% - 30px);
 }
 
 .section {
+    max-width: 1920px;
     width: 100%;
+    margin: 0 auto;
     background-image: url("img/bg-page-1.png");
-    height: 770px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
+    padding: 40px 0px;
 }
 
 
@@ -92,7 +94,10 @@
 }
 
 .section__titles .section__title {
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'Poppins-Medium';
+    line-height: 30px;
+
 }
 
 .text--white {
@@ -102,7 +107,8 @@
 
 .section__titles .section__subtitle {
     font-family: 'Poppins-Medium';
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 45px;
 }
 
 
@@ -111,31 +117,68 @@ svg {
     margin-bottom: 0px;
 }
 
-
-.section-1__line-1,
-.section-2__line-1,
-.section-3__line-1 {
+.first__section--container {
+    max-width: 900px !important;
+    width: 100%;
+    padding: 30px 25px;
     display: flex;
-    justify-content: space-around;
-    width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(20px);
+    padding: 30px 0px;
 }
 
-.section-1__line-2 {
+.section__rounds {
+    max-width: 900px !important;
+    width: 100%;
+}
+
+.first__section__line-1,
+.titta__line-1 {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 100%;
 }
 
-.section-2__line-2,
-.section-3__line-2 {
+.first__section__line-1 .r1 {
+    margin-left: 150px;
+}
+
+.first__section__line-1 .r2 {
+    margin-right: 150px;
+}
+
+.first__section__line-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.first__section__line-3 {
+    transform: translateY(-50px);
+}
+
+.first__section-1__sentence {
+    color: #fff;
+    font-family: 'Poppins-Medium';
+    font-weight: 400;
+    transform: translateY(30px);
+}
+
+.titta__line-2,
+.rubrik__line-2 {
     display: flex;
     justify-content: space-evenly;
-    width: 800px;
+    width: 100%;
+
 }
 
 .round__image {
-    height: 170px;
-    width: 170px;
+    height: 190px;
+    width: 190px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,40 +187,31 @@ svg {
     z-index: 2;
 }
 
-.section-1__line-1 .round-1__image {
+.first__section__line-1 .round-1__image {
     background-image: url("img/VOTO0026_Web_16x9_220520.png");
     border: 3px solid #fff
 }
 
-.section-1__line-1 .round-2__image {
+.first__section__line-1 .round-2__image {
     background-image: url("img/image-2.png");
 
 }
 
-.section-1__line-2 .round-1__image {
+.first__section__line-2 .round-1__image {
     background-image: url("img/image-3.png");
 }
 
-.section-1__line-2 .round-2__image {
+.first__section__line-2 .round-2__image {
     background-image: url("img/image-4.png");
 }
 
-.section-1__line-3 .round-1__image {
+.first__section__line-3 .round-1__image {
     background-image: url("img/image-5.png");
 }
 
-.section-3__line-3 {
+.rubrik__line-3 {
     background-image: url("img/diver+treasure.png");
     z-index: 999;
-}
-
-
-.section-1__sentence {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 700;
-    transform: translateY(3px);
-    font-family: 'BwMitga-Bold';
 }
 
 
@@ -189,20 +223,20 @@ svg {
 }
 
 
-.section-2__line-1 .round-1__image,
-.section-2__line-1 .round-2__image,
-.section-2__line-1 .round-3__image,
-.section-2__line-2 .round-1__image,
-.section-2__line-2 .round-2__image,
-.section-3__line-1 .round-1__image,
-.section-3__line-1 .round-2__image,
-.section-3__line-1 .round-3__image,
-.section-3__line-2 .round-1__image,
-.section-3__line-2 .round-2__image {
+.titta__line-1 .round-1__image,
+.titta__line-1 .round-2__image,
+.titta__line-1 .round-3__image,
+.titta__line-2 .round-1__image,
+.titta__line-2 .round-2__image,
+.rubrik__line-1 .round-1__image,
+.rubrik__line-1 .round-2__image,
+.rubrik__line-1 .round-3__image,
+.rubrik__line-2 .round-1__image,
+.rubrik__line-2 .round-2__image {
     background-image: url("img/man+fish.png");
 }
 
-.section-2__line-3 .round__title p {
+.titta__line-3 .round__title p {
     font-size: 25px !important;
     font-family: 'LasseÅberg_2020';
 }
@@ -223,14 +257,14 @@ svg {
 
 .top-right-image {
     width: 60px;
-    right: -10px;
+    right: -20px;
     top: -18px;
 }
 
 .bottom-right-image {
     width: 140px;
-    bottom: 70px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
 }
 
 .bottom-left-image {
@@ -239,13 +273,13 @@ svg {
     left: 50px;
 }
 
-.section-2__line-3 {
+.titta__line-3 {
     position: absolute;
-    bottom: 70px;
-    left: 50px;
+    bottom: 60px;
+    left: 110px;
 }
 
-.section-2__line-3 .round-1__image {
+.titta__line-3 .round-1__image {
     background-image: url("img/diver.png");
     width: 140px;
     height: 140px;
@@ -273,88 +307,65 @@ svg {
 @media screen and (max-width: 1200px) {
 
 
-    .section {
-        height: 710px;
-    }
-
-    .container {
-
-        max-height: 600px;
-
-    }
-
     .round__image {
-        height: 150px;
-        width: 150px;
+        height: 190px;
+        width: 190px;
     }
 
     .round__title p {
         font-size: 30px;
-
     }
 
     .section__titles .section__title {
         font-size: 38px;
     }
 
-    .section-2__line-3 .round-1__image {
-        width: 100px;
-        height: 100px;
-
+    .section__rounds {
+        padding: 0px 50px;
     }
 
-    .section-2__line-3 .round__title p {
+    .titta__line-3 .round__title p {
         font-size: 20px !important;
-        ;
     }
 
-
-    .section-2__line-3 {
-        bottom: 50px;
-        left: 2%;
+    .titta__line-3 {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
     }
 
-
-    .bottom-right-image,
-    .bottom-left-image {
-        width: 130px;
-        right: 2%;
+    .top-right-image {
+        width: 50px;
+        right: -15px;
+        top: -18px;
     }
-
 }
 
 
 @media screen and (max-width: 992px) {
 
 
-    .container {
-        max-height: 600px;
-    }
-
     .round__image {
-        height: 150px;
-        width: 150px;
+        height: 170px;
+        width: 170px;
     }
 
-    .round__title p {
-        font-size: 30px;
-
+    .first__section--container {
+        padding: 0px 20px;
     }
 
-    .section__titles .section__title {
-        font-size: 38px;
+    .first__section-1__sentence {
+        transform: translateY(5px);
+        min-width: 200px;
+        text-align: center;
     }
 
-    .section-2__line-3 .round-1__image,
-    .section-2__line-3 .round__title {
+    .titta__line-3 .round-1__image,
+    .titta__line-3 .round__title {
         display: none;
 
     }
 
-    .section-2__line-3 .round__title p {
-        font-size: 20px !important;
-
-    }
 
     .bottom-right-image,
     .bottom-left-image {
@@ -362,29 +373,17 @@ svg {
         bottom: 40px;
     }
 
-    .section-1__line-1,
-    .section-2__line-1,
-    .section-3__line-1,
-    .section-1__line-2,
-    .section-2__line-2,
-    .section-3__line-2 {
-        width: 700px;
-    }
-
-
 }
 
 @media screen and (max-width: 768px) {
 
-
-    .container {
-        max-height: 600px;
-        max-width: 650px;
-    }
-
     .round__image {
         height: 130px;
         width: 130px;
+    }
+
+    .section__titles .section__title {
+        font-size: 34px;
     }
 
     .round__title p {
@@ -396,129 +395,41 @@ svg {
         max-width: 400px;
     }
 
-    .section-1__line-1,
-    .section-2__line-1,
-    .section-3__line-1,
-    .section-1__line-2,
-    .section-2__line-2,
-    .section-3__line-2 {
-        width: 570px;
-    }
-
-    .section__titles .section__title {
-        font-size: 38px;
-    }
-
-    .section-2__line-3 .round__title p {
-        font-size: 20px !important;
-
-    }
-
     .bottom-right-image {
-        width: 90px;
-        bottom: 20px;
+        width: 80px;
+        bottom: 30px;
+        right: 20px;
     }
 
-    .bottom-left-image {
-        width: 90px;
-        /* left: 1%; */
-        bottom: 20px;
+    .first__section__line-2 {
+        padding: 0px 70px;
     }
 
-    .top-left-image {
-        left: -10px;
-        width: 100px;
+    .first__section__line-1 .r1 {
+        margin-left: 130px;
     }
 
-    .top-right-image {
-        width: 50px;
-
+    .first__section__line-1 .r2 {
+        margin-right: 130px;
     }
-
 }
 
 @media screen and (max-width: 576px) {
 
-    .section-1__line-1,
-    .section-2__line-1,
-    .section-3__line-1,
-    .section-1__line-2,
-    .section-2__line-2,
-    .section-3__line-2 {
-        width: 400px;
-    }
-
-
-    .section-2__line-1,
-    .section-3__line-1 {
+    .titta__line-1,
+    .rubrik__line-1 {
         width: 300px !important;
         flex-wrap: wrap;
 
     }
 
-    /* .section-1__line-1 {
-        width: 200px !important;
-        flex-wrap: wrap;
-
-    } */
-
-    .section-1__sentence {
+    .first__section__sentence {
         font-size: 15px;
-        max-width: 200px;
+        max-width: 100px;
         text-align: center;
     }
 
     .round__title p {
         font-size: 18px;
-    }
-
-    .bottom-right-image {
-        width: 70px;
-        bottom: 0px;
-    }
-
-    .bottom-left-image {
-        width: 90px;
-        /* left: 1%; */
-        bottom: 20px;
-    }
-
-    .top-left-image {
-        left: -10px;
-        width: 100px;
-    }
-
-    .top-right-image {
-        width: 50px;
-
-    }
-
-    .section-1__sentence {
-        transform: translateY(40px);
-
-    }
-
-
-}
-
-@media screen and (max-width: 375px) {
-
-    .container {
-        max-height: 600px;
-        max-width: 300px;
-    }
-
-    .section-1__line-1,
-    .section-2__line-1,
-    .section-3__line-1,
-    .section-1__line-2,
-    .section-2__line-2,
-    .section-3__line-2 {
-        width: 300px;
-    }
-
-    .round__image {
-        height: 100px;
-        width: 100px;
     }
 }
