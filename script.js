@@ -1,3 +1,5 @@
-const circleType = new CircleType(document.getElementById('curve'));
+new CircleType(document.getElementById('curve1'))
+    .radius(50);
 
-circleType.radius(200);
+new CircleType(document.getElementById('curv'))
+    .radius(50);
