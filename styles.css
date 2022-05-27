@@ -115,7 +115,6 @@ svg {
 }
 
 
-
 .section-1__line-1,
 .section-2__line-1,
 .section-3__line-1 {
@@ -177,11 +176,10 @@ svg {
 
 
 .section-1__sentence {
-    position: absolute;
     font-size: 14px;
     color: #fff;
     font-weight: 700;
-    bottom: 2%;
+    transform: translateY(3px);
     font-family: 'BwMitga-Bold';
 }
 
@@ -192,7 +190,6 @@ svg {
     justify-content: center;
     flex-direction: column;
 }
-
 
 
 .section-2__line-1 .round-1__image,
@@ -212,7 +209,6 @@ svg {
     font-size: 25px !important;
     font-family: 'LasseÅberg_2020';
 }
-
 
 .top-left-image,
 .top-right-image,
@@ -274,3 +270,5 @@ svg {
     display: flex;
     justify-content: center;
 }
+
+/* === Responsive ====  */
