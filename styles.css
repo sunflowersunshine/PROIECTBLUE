@@ -1,19 +1,27 @@
 @font-face {
     font-family: "BwMitga-Bold";
     src: url("fonts/BwMitga-Bold.otf");
+}
 
+@font-face {
     font-family: "LasseÅberg_2020";
     src: url("fonts/LasseÅberg_2020..otf");
+}
 
+@font-face {
     font-family: "MinionPro-Regular";
     src: url("fonts/MinionPro-Regular.otf");
+}
 
+@font-face {
     font-family: "Poppins-Bold";
     src: url("fonts/Poppins-Bold.ttf");
+}
 
+
+@font-face {
     font-family: "Poppins-Medium";
     src: url("fonts/Poppins-Medium.ttf");
-
 }
 
 
@@ -55,19 +63,24 @@
 }
 
 .round__title p {
-    font-family: 'Poppins-Bold';
+    font-family: 'MinionPro-Regular';
     font-size: 35px;
 }
 
 
-
-.round__title path {
-    fill: transparent;
+svg {
+    font-size: 100px;
+    margin-bottom: 0px;
 }
 
-.round__title text {
-    fill: blue;
+path {
+    /* fill: transparent; */
 }
+
+text {
+    fill: #FF9800;
+}
+
 
 .section-1__line-1,
 .section-2__line-1 {
