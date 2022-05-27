@@ -81,6 +81,11 @@
     font-size: 40px;
 }
 
+.title--white {
+    color: #fff !important;
+
+}
+
 .section__titles .section__subtitle {
     font-family: 'Poppins-Medium';
     font-size: 20px;
@@ -163,7 +168,7 @@ text {
     font-family: 'BwMitga-Bold';
 }
 
-.container--blue {
+.container--lightblue {
     max-height: 500px;
     height: 100%;
     width: 100%;
@@ -239,4 +244,16 @@ text {
     z-index: 2;
     border: 3px solid #fff;
     border-radius: 50%;
+}
+
+.section__round img {
+    width: 40px;
+}
+
+
+.round-1__image,
+.round-2__image,
+.round-3__image {
+    display: flex;
+    justify-content: center;
 }
