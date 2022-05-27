@@ -34,11 +34,28 @@
 .container {
     max-width: 1380px;
     margin: 0 auto;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    flex-direction: column;
+    position: relative;
+}
+
+.container--lightblue {
+    background-color: #C2E5F4;
+
+}
+
+.container--darkblue {
+    background-color: #0086ca;
 }
 
 .section {
     background-image: url("img/bg-page-1.png");
-    height: 730px;
+    height: 770px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,7 +98,7 @@
     font-size: 40px;
 }
 
-.title--white {
+.text--white {
     color: #fff !important;
 
 }
@@ -97,17 +114,11 @@ svg {
     margin-bottom: 0px;
 }
 
-path {
-    /* fill: transparent; */
-}
-
-text {
-    fill: #FF9800;
-}
 
 
 .section-1__line-1,
-.section-2__line-1 {
+.section-2__line-1,
+.section-3__line-1 {
     display: flex;
     justify-content: space-around;
     width: 800px;
@@ -119,7 +130,8 @@ text {
     width: 800px;
 }
 
-.section-2__line-2 {
+.section-2__line-2,
+.section-3__line-2 {
     display: flex;
     justify-content: space-evenly;
     width: 800px;
@@ -158,6 +170,11 @@ text {
     background-image: url("img/image-5.png");
 }
 
+.section-3__line-3 {
+    background-image: url("img/diver+treasure.png");
+    z-index: 999;
+}
+
 
 .section-1__sentence {
     position: absolute;
@@ -168,17 +185,6 @@ text {
     font-family: 'BwMitga-Bold';
 }
 
-.container--lightblue {
-    max-height: 500px;
-    height: 100%;
-    width: 100%;
-    background-color: #C2E5F4;
-    display: flex;
-    align-items: center;
-    justify-content: space-around !important;
-    flex-direction: column;
-    position: relative;
-}
 
 .section__rounds {
     display: flex;
@@ -193,7 +199,12 @@ text {
 .section-2__line-1 .round-2__image,
 .section-2__line-1 .round-3__image,
 .section-2__line-2 .round-1__image,
-.section-2__line-2 .round-2__image {
+.section-2__line-2 .round-2__image,
+.section-3__line-1 .round-1__image,
+.section-3__line-1 .round-2__image,
+.section-3__line-1 .round-3__image,
+.section-3__line-2 .round-1__image,
+.section-3__line-2 .round-2__image {
     background-image: url("img/man+fish.png");
 }
 
@@ -205,7 +216,8 @@ text {
 
 .top-left-image,
 .top-right-image,
-.bottom-right-image {
+.bottom-right-image,
+.bottom-left-image {
     z-index: 5;
     position: absolute;
 }
@@ -228,6 +240,12 @@ text {
     right: 50px;
 }
 
+.bottom-left-image {
+    width: 230px;
+    bottom: 50px;
+    left: 50px;
+}
+
 .section-2__line-3 {
     position: absolute;
     bottom: 70px;
@@ -238,7 +256,6 @@ text {
     background-image: url("img/diver.png");
     width: 140px;
     height: 140px;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     z-index: 2;
