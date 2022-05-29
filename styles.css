@@ -50,6 +50,11 @@
     width: calc(100% - 30px);
 }
 
+.container--white {
+    background-color: #fff;
+    width: calc(100% - 30px);
+}
+
 .mobile-bottom-right-image,
 .mobile-bottom-left-image {
     display: none;
@@ -330,6 +335,57 @@ svg {
 .round-3__image {
     display: flex;
     justify-content: center;
+}
+
+
+/* section-4 */
+.boken__white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container--white .section__subtitle {
+    max-width: 600px;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.container--white .top-left-image {
+    left: 10px;
+    top: -60px;
+}
+
+.boken__white .boken__white__img {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.boken__white__text {
+    color: #1a4974;
+    text-align: center;
+}
+
+.boken__white__text .boken__lysna {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+}
+
+.boken__white__text .boken__up {
+    font-family: "Poppins-Medium";
+    font-size: 15px;
+}
+
+.boken__white__text .boken_har {
+    font-family: "MinionPro-Regular";
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.container--white .blue-arrow {
+    width: 45px;
+    transform: translateY(20px);
 }
 
 /* === Responsive ====  */
@@ -655,5 +711,9 @@ svg {
         width: 110px;
         bottom: 10px;
         left: 20px;
+    }
+
+    .container--white .bottom-right-image {
+        display: none;
     }
 }
