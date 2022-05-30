@@ -1,5 +1,2 @@
-new CircleType(document.getElementById('curve1'))
-    .radius(50);
-
-new CircleType(document.getElementById('curv'))
-    .radius(50);
+new CircleType(document.getElementById('demo1'))
+    .radius(384);
