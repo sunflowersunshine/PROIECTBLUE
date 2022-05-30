@@ -119,6 +119,7 @@
     font-family: 'Poppins-Medium';
     font-size: 24px;
     margin-bottom: 45px;
+    margin-top: 20px;
 }
 
 
@@ -362,12 +363,15 @@ svg {
     margin: 0 auto;
 }
 
-.boken__white__text {
+.boken__white__text,
+.hitta__white__text {
     color: #1a4974;
     text-align: center;
 }
 
-.boken__white__text .boken__lysna {
+.boken__white__text .boken__lysna,
+.hitta__har,
+.hitta__kop {
     font-family: 'Poppins-Bold';
     font-size: 20px;
 }
@@ -377,6 +381,10 @@ svg {
     font-size: 15px;
 }
 
+.hitta__kop {
+    margin-top: 40px;
+}
+
 .boken__white__text .boken_har {
     font-family: "MinionPro-Regular";
     font-size: 30px;
@@ -384,8 +392,26 @@ svg {
 }
 
 .container--white .blue-arrow {
-    width: 45px;
-    transform: translateY(20px);
+    width: 30px;
+    position: absolute;
+    bottom: 9px;
+}
+
+.hitta__xxx {
+    max-width: 600px;
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hitta__valj {
+    font-size: 10px;
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* === Responsive ====  */
@@ -497,6 +523,8 @@ svg {
     .section__titles .section__subtitle {
         font-size: 15px;
         max-width: 400px;
+        margin-top: 10px;
+        line-height: 20px;
     }
 
     .bottom-right-image {
@@ -716,4 +744,34 @@ svg {
     .container--white .bottom-right-image {
         display: none;
     }
+
+    .boken__white__text .boken_har {
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+    }
+
+    .container--white .blue-arrow {
+        width: 30px;
+        /* bottom: 30px; */
+    }
+
+    .hitta__xxx {
+        font-size: 15px;
+        max-width: 300px;
+    }
+
+    .hitta__har {
+        font-size: 17px;
+    }
+
+    .hitta__valj {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .hitta__kop {
+        font-size: 17px;
+    }
+
 }
